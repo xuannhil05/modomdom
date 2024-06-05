@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.menu-button-0').onclick = () => {
         console.log('Menu 1 clicked');
-        displayNewScreen('menu1.png', 'video.mp4', false);
+        displayNewScreen('menu1.png', 'https://drive.google.com/uc?export=download&id=1CrK9FCVf144lPSAH8YmZRu1mer-d99mK', false);
     };
 
     document.querySelector('.menu-button-1').onclick = () => {
@@ -153,7 +153,7 @@ function formCircleAndLine() {
 
                 if (index === 0) {
                     menuButton.onclick = () => {
-                        displayNewScreen('menu1.png', 'video.mp4', false);
+                        displayNewScreen('menu1.png', 'https://drive.google.com/uc?export=download&id=1CrK9FCVf144lPSAH8YmZRu1mer-d99mK', false);
                     };
                 } else if (index === 1) {
                     menuButton.onclick = () => {
