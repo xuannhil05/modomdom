@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.menu-button-0').onclick = () => {
         console.log('Menu 1 clicked');
-        displayNewScreen('menu1.png', 'https://drive.google.com/uc?export=download&id=1CrK9FCVf144lPSAH8YmZRu1mer-d99mK', false);
+        displayNewScreen('menu1.png', 'video.mp4', false);
     };
 
     document.querySelector('.menu-button-1').onclick = () => {
@@ -153,7 +153,7 @@ function formCircleAndLine() {
 
                 if (index === 0) {
                     menuButton.onclick = () => {
-                        displayNewScreen('menu1.png', 'https://drive.google.com/uc?export=download&id=1CrK9FCVf144lPSAH8YmZRu1mer-d99mK', false);
+                        displayNewScreen('menu1.png', 'video.mp4', false);
                     };
                 } else if (index === 1) {
                     menuButton.onclick = () => {
@@ -233,7 +233,7 @@ function displayNewScreen(backgroundImage, videoSrc, isFromMenu5) { // Change is
     newScreen.appendChild(videoElement);
 
     const backButton = document.createElement('button');
-    backButton.innerText = 'Back to Menu';
+    backButton.innerText = 'Trở về';
     backButton.style.position = 'fixed';
     backButton.style.bottom = '20px';
     backButton.style.left = '50%';
@@ -279,7 +279,7 @@ function displayImageScreen(imageSrc, isFromMenu5) { // Change isFromMenu4 to is
     newScreen.appendChild(menuImage);
 
     const backButton = document.createElement('button');
-    backButton.innerText = 'Back to Menu';
+    backButton.innerText = 'Trở về';
     backButton.style.position = 'fixed';
     backButton.style.bottom = '20px';
     backButton.style.left = '50%';

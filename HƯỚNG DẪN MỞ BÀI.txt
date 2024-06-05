@@ -1,0 +1,28 @@
+Kính thưa cô Phương,
+
+Trước hết, nhóm "Dí lại Deadline" chúng em rất xin lỗi cô vì đã bắt cô phải tải file code này quá nặng về máy, vì khi public trang web lên sẽ bị trả phí hoặc không có âm thanh nên chúng em bắt buộc phải file trực tiếp cho cô. 
+Chúng em xin lỗi cô rất nhiều vì sự bất tiện này.
+
+
+Để có thể xem bài chúng em một cách rõ ràng nhất, nhờ cô theo các bước sau:
+
+1. Mở File HTML: Bấm vào file HTML đã gửi, nó sẽ mở ra trang web của nhóm chúng em.
+2. Cài Đặt Âm Thanh:
+	_ Để nghe được âm thanh từ trang web, cô cần thực hiện các bước sau:
+	_ Mở Chrome và vào phần Cài đặt.
+	_ Chọn Quyền riêng tư và bảo mật.
+	_ Chọn Cài đặt trang web.
+	_ Chọn Các chế độ nội dung khác.
+	_ Chọn Âm thanh.
+	_ Dưới mục Được phép phát âm thanh, cô hãy copy đường dẫn của file HTML.
+	_ Bấm Thêm và dán đường dẫn vừa copy vào.
+	_ Bấm Thêm để lưu cài đặt. Sau đó, cô sẽ nghe được âm thanh từ trang web.
+	(Nếu cô không muốn nghe âm thanh, có thể bỏ qua bước này).
+
+3. Xem Full Màn Hình:
+	_ Sau khi cài đặt âm thanh xong, cô vui lòng bấm F11 hoặc Fn + F11 (nếu cô dùng laptop) để xem trang web ở chế độ toàn màn hình mà không bị lỗi.
+
+Có những lưu ý sau ạ:
+	_Do file code quá nặng, nên khi mở vào các chương 1, 2, 3, 4, 5 có thể sẽ mất một ít thời gian để tải. Kính mong cô thông cảm và chờ đợi một chút.
+
+Nhóm Dí Lại Deadline xin chân thành cảm ơn cô và chúc cô một ngày tốt lành ạ.

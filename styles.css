@@ -1,8 +1,8 @@
 body {
     margin: 0;
     height: 200vh; /* Tăng chiều cao trang web để có thể cuộn */
-    background-image: url('Background\ \(2\).jpg'); /* Đảm bảo đường dẫn đến ảnh là chính xác */
-    background-size: 100% 100%; /* Đảm bảo ảnh phủ kín cả chiều rộng và chiều cao */
+    background-image: url('./Background (2).jpg'); /* Đảm bảo đường dẫn đến ảnh là chính xác */
+    background-size: auto; /* Đảm bảo ảnh phủ kín cả chiều rộng và chiều cao */
     background-repeat: no-repeat; /* Ngăn ảnh lặp lại */
     background-attachment: scroll; /* Đảm bảo ảnh di chuyển cùng khi cuộn */
     background-position: center top; /* Đặt vị trí ảnh ở giữa phía trên */
@@ -134,7 +134,6 @@ button:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-
 #MoDomDom {
     position: absolute;
     top: 57%;
@@ -148,27 +147,26 @@ button:hover {
 
 /* Thêm hình nền cho các nút menu */
 .menu-button-0 {
-    background-image: url('1.png');
+    background-image: url('./1.png');
 }
 
 .menu-button-1 {
-    background-image: url('2.png');
+    background-image: url('./2.png');
 }
 
 .menu-button-2 {
-    background-image: url('3.png');
+    background-image: url('./3.png');
 }
 
 .menu-button-3 {
-    background-image: url('4.png');
+    background-image: url('./4.png');
 }
 
 .menu-button-4 {
-    background-image: url('5.png');
+    background-image: url('./5.png');
 }
 
 .menu-button-5 {
-    background-image: url('6.png');
+    background-image: url('./6.png');
     display: none; /* Initially hidden */
 }
-
