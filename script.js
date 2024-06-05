@@ -239,8 +239,8 @@ function displayNewScreen(backgroundImage, videoSrc, isFromMenu5) { // Change is
     backButton.style.left = '50%';
     backButton.style.transform = 'translateX(-50%)';
     backButton.onclick = () => {
-        if (isFromMenu5) { // Change from isFromMenu4 to isFromMenu5
-            localStorage.setItem('fromMenu5', 'true'); // Set fromMenu5 flag
+        if (isFromMenu5) {
+            localStorage.setItem('fromMenu5', 'true');
             console.log('Setting fromMenu5 to true');
         }
         document.body.removeChild(newScreen);
