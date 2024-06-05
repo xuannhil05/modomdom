@@ -29,32 +29,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.menu-button-0').onclick = () => {
         console.log('Menu 1 clicked');
-        displayNewScreen('menu1.png', 'video.mp4', false);
+        displayNewScreen('./menu1.png', './video.mp4', false);
     };
 
     document.querySelector('.menu-button-1').onclick = () => {
         console.log('Menu 2 clicked');
-        displayImageScreen('menu2.png', false);
+        displayImageScreen('./menu2.png', false);
     };
 
     document.querySelector('.menu-button-2').onclick = () => {
         console.log('Menu 3 clicked');
-        displayImageScreen('menu3.png', false);
+        displayImageScreen('./menu3.png', false);
     };
 
     document.querySelector('.menu-button-3').onclick = () => {
         console.log('Menu 4 clicked');
-        displayImageScreen('menu4.png', false);
+        displayImageScreen('./menu4.png', false);
     };
 
     document.querySelector('.menu-button-4').onclick = () => {
         console.log('Menu 5 clicked');
-        displayImageScreen('menu5.png', true); // Set isFromMenu5 flag
+        displayImageScreen('./menu5.png', true); // Set isFromMenu5 flag
     };
 
     document.querySelector('.menu-button-5').onclick = () => {
         console.log('Menu 6 clicked');
-        displayImageScreen('menu6.png', false);
+        displayImageScreen('./menu6.png', false);
     };
 
     document.querySelector('.menu-button-5').style.display = 'none';
@@ -153,27 +153,27 @@ function formCircleAndLine() {
 
                 if (index === 0) {
                     menuButton.onclick = () => {
-                        displayNewScreen('menu1.png', 'video.mp4', false);
+                        displayNewScreen('./menu1.png', './video.mp4', false);
                     };
                 } else if (index === 1) {
                     menuButton.onclick = () => {
-                        displayImageScreen('menu2.png', false);
+                        displayImageScreen('./menu2.png', false);
                     };
                 } else if (index === 2) {
                     menuButton.onclick = () => {
-                        displayImageScreen('menu3.png', false);
+                        displayImageScreen('./menu3.png', false);
                     };
                 } else if (index === 3) {
                     menuButton.onclick = () => {
-                        displayImageScreen('menu4.png', false);
+                        displayImageScreen('./menu4.png', false);
                     };
                 } else if (index === 4) {
                     menuButton.onclick = () => {
-                        displayImageScreen('menu5.png', true); // Set isFromMenu5 flag
+                        displayImageScreen('./menu5.png', true); // Set isFromMenu5 flag
                     };
                 } else if (index == 5) {
                     menuButton.onclick = () => {
-                        displayImageScreen('menu6.png', false);
+                        displayImageScreen('./menu6.png', false);
                     };
                 } else {
                     menuButton.onclick = () => alert(`Menu ${index + 1} clicked`);
