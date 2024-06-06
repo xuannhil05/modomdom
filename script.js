@@ -193,7 +193,7 @@ function formCircleAndLine() {
     }, 4000);
 }
 
-function displayNewScreen(backgroundImage, videoSrc, isFromMenu5) { // Change isFromMenu4 to isFromMenu5
+function displayNewScreen(backgroundImage, videoSrc, isFromMenu5) {
     console.log(`Displaying new screen: ${backgroundImage}, isFromMenu5: ${isFromMenu5}`);
     const imgElement = document.getElementById('MoDomDom');
     imgElement.style.display = 'none';
@@ -221,16 +221,18 @@ function displayNewScreen(backgroundImage, videoSrc, isFromMenu5) { // Change is
     menuImage.style.display = 'block';
     newScreen.appendChild(menuImage);
 
-    const videoElement = document.createElement('video');
-    videoElement.src = videoSrc;
-    videoElement.controls = true;
-    videoElement.style.position = 'absolute';
-    videoElement.style.top = '690%';
-    videoElement.style.left = '50%';
-    videoElement.style.transform = 'translate(-50%, -50%)';
-    videoElement.style.width = '80%';
-    videoElement.style.height = 'auto';
-    newScreen.appendChild(videoElement);
+    // Create and configure the iframe
+    const iframeElement = document.createElement('iframe');
+    iframeElement.src = videoSrc;
+    iframeElement.style.position = 'absolute';
+    iframeElement.style.top = '690%';
+    iframeElement.style.left = '50%';
+    iframeElement.style.transform = 'translate(-50%, -50%)';
+    iframeElement.style.width = '80%';
+    iframeElement.style.height = 'auto';
+    iframeElement.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframeElement.allowFullscreen = true;
+    newScreen.appendChild(iframeElement);
 
     const backButton = document.createElement('button');
     backButton.innerText = 'Trở về';
@@ -239,54 +241,8 @@ function displayNewScreen(backgroundImage, videoSrc, isFromMenu5) { // Change is
     backButton.style.left = '50%';
     backButton.style.transform = 'translateX(-50%)';
     backButton.onclick = () => {
-        if (isFromMenu5) {
+        if (isFromMenu5) { 
             localStorage.setItem('fromMenu5', 'true');
-            console.log('Setting fromMenu5 to true');
-        }
-        document.body.removeChild(newScreen);
-        imgElement.style.display = 'block';
-        showMenuButtons();
-    };
-    newScreen.appendChild(backButton);
-}
-
-function displayImageScreen(imageSrc, isFromMenu5) { // Change isFromMenu4 to isFromMenu5
-    console.log(`Displaying image screen: ${imageSrc}, isFromMenu5: ${isFromMenu5}`);
-    const imgElement = document.getElementById('MoDomDom');
-    imgElement.style.display = 'none';
-
-    const newScreen = document.createElement('div');
-    newScreen.style.position = 'fixed';
-    newScreen.style.top = '0';
-    newScreen.style.left = '0';
-    newScreen.style.width = '100%';
-    newScreen.style.height = '100%';
-    newScreen.style.backgroundImage = `url("${imageSrc}")`;
-    newScreen.style.backgroundSize = 'cover';
-    newScreen.style.zIndex = '999';
-    newScreen.style.overflow = 'auto';
-    document.body.appendChild(newScreen);
-
-    const menuImage = document.createElement('img');
-    menuImage.src = imageSrc;
-    menuImage.style.position = 'absolute';
-    menuImage.style.top = '0';
-    menuImage.style.left = '50%';
-    menuImage.style.transform = 'translateX(-50%)';
-    menuImage.style.width = '100%';
-    menuImage.style.height = 'auto';
-    menuImage.style.display = 'block';
-    newScreen.appendChild(menuImage);
-
-    const backButton = document.createElement('button');
-    backButton.innerText = 'Trở về';
-    backButton.style.position = 'fixed';
-    backButton.style.bottom = '20px';
-    backButton.style.left = '50%';
-    backButton.style.transform = 'translateX(-50%)';
-    backButton.onclick = () => {
-        if (isFromMenu5) { // Change from isFromMenu4 to isFromMenu5
-            localStorage.setItem('fromMenu5', 'true'); // Set fromMenu5 flag
             console.log('Setting fromMenu5 to true');
         }
         document.body.removeChild(newScreen);
