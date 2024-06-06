@@ -170,3 +170,7 @@ button:hover {
     background-image: url('./6.png');
     display: none; /* Initially hidden */
 }
+iframe {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
